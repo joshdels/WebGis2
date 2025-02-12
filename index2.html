@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+
+    <h1>Give Your Information</h1>
+
+    <form action="save.php" method="POST"> 
+        <label for="email_input">Please provide and Email</label>
+        <input type="email" name="email" id="email_input">
+        <br>
+        <label for="name_input">Please provide name</label>
+        <input type="text" name="name" id="name_input">
+        <br>
+        <label for="password_input">Please provide password</label>
+        <input type="password" name="password" id="password_input">
+        <br>
+        <input type="submit" value="Save my data!">
+        <br><br>
+       
+
+    </form>
+
+    <button onClick="clicked()">Click Me</button>
+    
+    <p>Hi im Joshua De Leon a GIS Developer <a target="black" href="https://www.google.com">My webiste</a></p>
+    <a href="https://www.google.com">click me to visit google!</a>
+    <br><br>
+
+    <!-- image -->
+    <img src="https://www.vdm.ford.com/content/dam/na/ford/en_us/images/mustang/2025/jellybeans/Ford_Mustang_2025_101A_PYZ_882_89W_13A_CON_64F_99H_44U_EBST_DEFAULT_EXT_4.png" 
+        alt="Car1" style="height: 200px">
+    <img src="image/car.jpg" alt="Car2" style="height: 200px;">
+
+
+    <script>
+        function clicked(){
+            console.log('You clicked me!')
+        }
+    </script>
+    
+</body>
+</html>
