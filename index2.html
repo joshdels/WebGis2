@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
+
+    <!-- Link to external font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Inside CSS practice -->
+
 </head>
 <body>
 
-    <h1 style="font-family: Arial, Helvetica, sans-serif;">Give Your Information</h1>
+    <h1 style = "font-family: Libre Baskerville, serif; font-weight:400; font-style: normal;">Give Your Information</h1>
 
     <form action="save.php" method="POST"> 
         <label for="email_input">Please provide and Email</label>
@@ -25,9 +34,9 @@
 
     </form>
 
-    <button onClick="clicked()">Click Me</button>
+    <button style="font-size: 20px" onClick="clicked()">Click Me</button>
     
-    <p style="color:red; background-color: aqua">Hi im Joshua De Leon a GIS Developer <a target="black" href="https://www.google.com">My webiste</a></p>
+    <p>Hi im Joshua De Leon a GIS Developer <a target="black" href="https://www.google.com">My webiste</a></p>
     <a href="https://www.google.com">click me to visit google!</a>
     <br><br>
 
@@ -35,6 +44,13 @@
     <img src="https://www.vdm.ford.com/content/dam/na/ford/en_us/images/mustang/2025/jellybeans/Ford_Mustang_2025_101A_PYZ_882_89W_13A_CON_64F_99H_44U_EBST_DEFAULT_EXT_4.png" 
         alt="Car1" style="height: 200px">
     <img src="image/car.jpg" alt="Car2" style="width: 300px ;border: 3px solid black;">
+
+    <br><br><br>
+
+    <div class="box">
+        <div class="heading">This is heading</div>
+        <div class="box-body">This is the body of the box, where you can write brieftly</div>
+    </div>
 
 
     <script>
