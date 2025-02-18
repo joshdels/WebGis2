@@ -19,7 +19,29 @@
         alert('Javascript is loading')
     </script> -->
 
+    
+    <label for="studentName">Write Student Name</label>
+    <input type="text" name="studentName" id="stName">
+    <button onclick="fromBtn()">Check records</button>
+    <br><br>
+
+    <label for="num1">First Number</label>
+    <input type="number" name="num1" id="num1">
+    <label for="num2">Second Number</label>
+    <input type="number" name="num2" id="num2">
+    <label for="actions"></label>
+    <select name="actions" id="actions">
+        <option value="add">+</option>
+        <option value="minus">-</option>
+        <option value="multiply">*</option>
+        <option value="divide">/</option>
+    </select>
+    <button onclick="calculate()">calculate</button>
+    
+    <p id="result"></p>
+
 </body>
 
-<script src="index3.js"></script>
+<!-- <script src="index3.js"></script> -->
+<script src="index4.js"></script>
 </html>
