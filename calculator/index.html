@@ -14,9 +14,11 @@
 <body>
 
     <div class="container">
+        <h1>My first Calculator</h1>
+        <br><br>
         <div class="row">
             <div class = col-6>
-                <h1>Calculator</h1>
+                <h2>Arithmetic</h2>
                 <label for="number1">First Number</label>
                 <input type="number" id="number1">
 
@@ -33,13 +35,29 @@
                     <option value="/">Division</option>
                 </select>
 
-                <button>Solve</button>
-                
+                <button onclick="calculate()">Solve</button>
+            </div>
+
+            <div class=" col-6">
+                <h2>Answer</h2>
+                <h3 id="answer"></h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <h2>Trigonometric</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <h2>Volume and Area</h2>
             </div>
         </div>
     </div>
 
-
-    
 </body>
+
+<script src=index.js> </script>
 </html>
