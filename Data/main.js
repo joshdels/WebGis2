@@ -11,9 +11,7 @@ const map = new Map({
     })
   ],
   view: new View({
-    center: [125.80954336542787, 7.453918732409208],
-    zoom: 4
+    center: [0, 0],
+    zoom: 2
   })
 });
-
-console.log(map); // Use the map variable to avoid the compile error
