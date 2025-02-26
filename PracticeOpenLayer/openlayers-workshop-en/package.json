@@ -1,0 +1,36 @@
+{
+  "name": "ol-workshop",
+  "description": "OpenLayers workshop",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "colormap": "^2.3.2",
+    "kompas": "^0.0.2",
+    "ol": "^10.3.0",
+    "ol-mapbox-style": "^12.3.5",
+    "papaparse": "^5.4.1"
+  },
+  "eslintConfig": {
+    "extends": "openlayers",
+    "rules": {
+      "no-unused-vars": [
+        "error",
+        {
+          "varsIgnorePattern": "^map"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint main.js examples",
+    "test": "npm run lint",
+    "start": "vite serve",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-openlayers": "^19.0.0",
+    "vite": "^3.2.11",
+    "vite-plugin-static-copy": "^0.7.0"
+  }
+}

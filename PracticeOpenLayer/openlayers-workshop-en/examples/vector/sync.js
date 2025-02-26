@@ -3,8 +3,10 @@ import Map from 'ol/Map';
 import VectorLayer from 'ol/layer/Vector';
 import VectorSource from 'ol/source/Vector';
 import View from 'ol/View';
+//! [import]
+import Link from 'ol/interaction/Link';
+//! [import]
 
-// assign to a variable named `map` for later use
 const map = new Map({
   target: 'map-container',
   layers: [
@@ -20,3 +22,7 @@ const map = new Map({
     zoom: 2,
   }),
 });
+
+//! [sync]
+map.addInteraction(new Link());
+//! [sync]
