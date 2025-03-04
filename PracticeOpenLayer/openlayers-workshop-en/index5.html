@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>OpenLayers</title>
+    <style>
+      @import "node_modules/ol/ol.css";
+    </style>
+    <style>
+      html, body, #map-container {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        font-family: sans-serif;
+
+        #controls {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+        }
+
+        #year {
+          position: absolute;
+          bottom: 1em;
+          left: 1em;
+          color: white;
+          -webkit-text-stroke: 1px black;
+          font-size: 3em;
+          font-weight: bold;
+        }
+
+        #title{
+          text-align: center;
+          color: white;
+          background-color: black;
+          font-size: 3em;
+        }
+
+        #legend{
+          position: absolute;
+          background-color: white;
+          bottom: 1em;
+          right: 1em;
+          color: black;
+          font-size: 0.8em;
+          font-weight: bold;
+          padding: 0.5em;
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+
+
+    <div id="title">Meteor Impact</div>
+
+    <div id="map-container" style="width: 100%; height: 100vh"></div>
+
+    <div id="year"></div>
+
+    <div id="legend">
+      <h1>Legend</h1>
+    </div>
+
+    <!-- <div id="controls">
+      <select id="image"></select>
+      <select id="visualization"></select>
+    </div> -->
+
+    <script src="./main4.js" type="module"></script>
+  </body>
+</html>
